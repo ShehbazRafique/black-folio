@@ -1,0 +1,1327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.span_menu {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.span_menu:hover {
+    color: red;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+a.side_a {
+    margin: 50px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#img_section {
+    background-image: url("https://images03.nicepagecdn.com/c461c07a441a5d220e8feb1a/93f996d6b66e562e8c8490a4/12798min.jpg");
+    background-position: 50% 50%;
+    height: 800px;
+    background-size: cover;
+}
+
+/*
+#section_container {
+    height: 100%;
+}
+*/
+.creative_main {
+    position: relative;
+    height: 100%;
+}
+
+.creative {
+    display: flex;
+    color: white;
+    position: absolute;
+    bottom: 40px;
+}
+
+.main_creative_heading {
+    flex: 50%;
+}
+
+.heading {
+    font-size: 2rem;
+    font-family: Raleway, sans-serif;
+    margin: 0 47px 0;
+}
+
+.creative_para {
+    flex: 50%;
+}
+.creative_para p{
+    line-height: 1.6;
+    text-align: right;
+    letter-spacing: 2px;
+    font-family: Raleway, sans-serif;
+}
+.div_p_para {
+    padding-top: 25px;
+}
+
+.div_p_para a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: white;
+}
+
+/*image*/
+#section_image {
+    background-color: #1a1a1a;
+    padding-bottom: 65px;
+    padding-top: 70px;
+}
+
+.main_image_div {
+    background-image: linear-gradient(#555c66, #292d33);
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+    padding-left: 25px;
+    padding-bottom: 32px;
+    padding-right: 25px;
+}
+.image_div {
+    width: 220px;
+    padding-top: 25px;
+}
+.image_card {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.main_image_div h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 auto 0 0;
+}
+
+.main_image_div h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 30px 0 0;
+    color: white;
+    font-family: Raleway, sans-serif;
+}
+
+.main_image_div p {
+    color: #b3b3b3;
+    font-style: italic;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 20px 0 20px;
+}
+
+.main_image_div a {
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/*--QUALIT CUNSOLTING---*/
+
+
+#Quality {
+    background-color: #e0e5eb;
+    padding-bottom: 74px;
+}
+
+.main_container {
+    position: relative;
+}
+
+.quality_consulting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.quality_svg {
+    fill: white;
+    width: 600px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.quality_main_div {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 235px;
+}
+
+.quality_heading p {
+    font-family: Raleway, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.main_quality_para {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    width: 750px;
+    line-height: 2;
+    margin: 30px auto 0;
+}
+
+.quality_link {
+    margin-top: 85px;
+
+}
+
+.quality_link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    padding: 17px 40px;
+    background: #038cb6;
+}
+
+.quality_link a:hover {
+    background-color: black;
+}
+
+/*--ABOUT COMPANY--*/
+
+#About_company {
+    background-color: #1a1a1a;
+}
+
+.main_text_about_company {
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.company_img {
+    width: 474px;
+    height: 474px;
+    background-image: url("quality.jpg");
+    background-position: 50% 50%;
+
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.about_company_text {
+    width: 40%;
+    margin-top: -60px;
+    line-height: 1.6;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.company_heading {
+    padding-bottom: 30px;
+}
+
+.company_heading h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: Raleway, sans-serif;
+}
+
+.about_para {
+    margin: 0px 10px 40px 0;
+}
+
+.main_about_para {
+    width: 354px;
+}
+
+.about_para_link {
+    margin-bottom: 55px;
+}
+
+.about_para_link a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.company_about_link a {
+    color: white;
+    text-decoration: none;
+    background-color: #038cb6;
+    padding: 12px 30px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 12px 38px 14px 37px;
+}
+
+.company_about_link a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+
+/*---IT TRANSFORM--*/
+
+#transform {
+    min-height: 702px;
+    background-image: url("back.jpg");
+    background-position: 50% 50%;
+}
+
+.main_it_div {
+    display: flex;
+}
+
+.it_main_text {
+    flex: 50%;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.main_it_img {
+    flex: 50%;
+}
+
+.it_img img {
+    max-width: 615px;
+    display: block;
+    height: 702px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.it_text_heading {
+    font-size: 2rem;
+    font-family: Raleway, sans-serif;
+}
+
+.it_text_para {
+    line-height: 1.8;
+    margin: 25px 0 0;
+}
+
+.it_text_para p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+}
+
+.it_text_link {
+    margin: 25px 0 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.it_text_link p {
+    font-size: 19px;
+}
+
+.it_text_link .a_link {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.it_link {
+    margin: 63px 0 0;
+}
+
+.it_link a {
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 17px 30px;
+    background: #038cb6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.it_link a:hover {
+    background-color: #1a1a1a;
+}
+
+/*---DEVOLPMENT---*/
+
+#devolpment_section {
+    background-image: url("background.jpg");
+}
+
+.main_devolpment {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.devolped_img {
+    background-position: 100% 50%;
+    background-image: url("technology.jpg");
+    background-size: cover;
+    height: 589px;
+    width: 55%;
+}
+
+.devolping_text {
+    flex: 50%;
+    width: 449px;
+}
+
+.straight_heading {
+    font-size: 3.7rem;
+    line-height: 1.1;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 36px;
+    color: white;
+}
+
+.devolping_link {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.devolping_link a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.devolped_svg {
+    color: white;
+}
+
+.devolped_link {
+    color: white;
+}
+
+.devolping-svg_div {
+    margin-bottom: 45px;
+}
+
+li {
+    display: flex;
+    gap: 10px;
+}
+
+.u-svg-content {
+    color: #038cb6;
+}
+
+.devolped_svg {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 25px auto 0 0;
+}
+
+.devolped_link a {
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 17px 30px;
+    background: #038cb6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.devolped_link a:hover {
+    background-color: #e5e5e5;
+    color: black;
+}
+
+/*---SERVICE---*/
+#service {
+    margin-top: 75px;
+    margin-bottom: 180px;
+}
+
+.consulting_service {
+    display: flex;
+    padding-bottom: 90px;
+    gap: 30px;
+}
+
+.management_team {
+    flex: 0 0 48.333%;
+    /* padding: 30px; */
+}
+
+.management_team img {
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.head_person {
+    width: 261px;
+    height: 261px;
+    margin: 0 auto 0 50px;
+}
+
+.consulting_men {
+    width: 227px;
+    height: 227px;
+    margin: 58px auto 0 0;
+}
+
+.guide_line_team {
+    width: 161px;
+    height: 161px;
+    object-position: 100% 50%;
+    margin: -271px 0 0 315px;
+}
+
+.service_text {
+    flex: 0 0 51.666%;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.service_heading {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.service_para {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    width: 560px;
+    font-family: sans-serif;
+}
+
+.service_para_link {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.service_para_link a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.service_link {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    background-image: none;
+    margin-top: 67px;
+}
+
+.service_link a {
+    padding: 20px 38px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #038cb6;
+    text-decoration: none;
+}
+
+.service_link a:hover {
+    background-color: black;
+}
+
+/*---FREELANCE & TEAM ---*/
+
+#purchase {
+    background: #1a1a1a;
+    color: white;
+    height: 565px;
+}
+
+.freelance_designer {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    align-items: end;
+    padding-top: 65px;
+}
+
+.freelancer-design {
+    display: flex;
+    gap: 35px;
+}
+
+.freelance_team_section {
+    background-color: #555c66;
+    width: 355px;
+    padding: 30px 26px;
+}
+
+.freelance_team {
+    background-color: #036cb6;
+    width: 355px;
+    padding: 30px 26px;
+    height: 450px;
+}
+
+.freelance_heading h4 {
+    font-family: Asap;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.freelance_heading h5 {
+    font-family: Asap;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: -40px 0px 0px 232px;
+}
+
+.freelance_para {
+    margin: 16px auto 0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.div {
+    margin: 23px 0 0;
+    border: 2px solid white;
+}
+
+.explain {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ul_li svg {
+    /* display: block;
+    text-align: center;*/
+    width: 13px;
+    fill: white;
+}
+
+li.ul_li p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.ul_li {
+    align-items: center;
+}
+
+.freelancer_link {
+    background-color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 55px auto 0;
+    padding: 16px 80px;
+}
+
+.freelancer_link:hover {
+    background-color: #e6e6e6;
+}
+
+.freelancer_link a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.freelance_link a:hover {
+    background-color: #b3b3b3;
+}
+
+.freelance_team_para {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*---COLLEAGES---*/
+
+#colleages {
+    background-image: url("colleages.jpg");
+    background-position: 50% 50%;
+    height: 810px;
+    background-size: cover;
+}
+
+.businessman {
+    padding-top: 70px;
+}
+
+.colleage-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2678a5;
+    font-family: Montserrat, sans-serif;
+}
+
+.colleage_para {
+    text-align: center;
+    margin: 40px auto 0;
+    font-family: 'Open Sans';
+}
+
+.colleage_para a {
+    color: black;
+}
+
+.form_input {
+    display: flex;
+    gap: 5px;
+    padding: 32px;
+    background-color: white;
+    margin: 40px auto 0;
+    width: 878px;
+}
+
+.input_type {
+    border: none;
+    background-color: #e5e5e5;
+    font-size: inherit;
+    padding: 10px 12px;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.colleage_Btn a {
+    text-decoration: none;
+    border: none;
+    font-family: 'Open Sans';
+    margin-left: 5px;
+    color: white;
+    background-color: #036cb6;
+    padding: 12px 30px;
+}
+
+.colleage_Btn {
+    margin-top: 11px;
+}
+
+#main_location_num {
+    background: white;
+    margin-top: 199px;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+.location-main {
+    display: flex;
+}
+
+.location_landline {
+    width: 50%;
+}
+
+img.locate_phone {
+    width: 33px;
+    height: 33px;
+}
+
+.svg_num h6 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: -33px 0 0 60px;
+}
+
+.location_para {
+    margin: 20px 0 0 60px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/*---FOOTER---*/
+
+#footer {
+    color: white;
+    background: #333333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer_main_text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 417px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    font-size: 0.875rem;
+}
+
+/*---LINK---*/
+
+section#footer_section {
+    background: #333;
+}
+
+.footer_section_links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 0.8rem;
+    color: #a1e6fb;
+    padding-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+.footer_section_links a {
+    color: #a1e6fb;
+}
+
+.footer_section_links a:hover {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .devolped_img {
+        width: 58%;
+    }
+    .creative_para p {
+        padding-right: 70px;
+    }
+    .container {
+        max-width: 940px;
+    }
+
+    .main_image_div {
+        padding-right: unset;
+        padding-left: 24px;
+    }
+
+    .image_div {
+        /*  width: 246px;*/
+        padding: 20px;
+    }
+    .main_quality_para {
+        width: 734px;
+    }
+
+    .main_text_about_company {
+        padding-top: 90px;
+        padding-bottom: 110px;
+    }
+
+    .company_img {
+        width: 433px;
+        height: 433px;
+    }
+
+    .about_company_text {
+        margin-top: 15px;
+    }
+
+    #transform {
+        min-height: unset;
+    }
+
+    .it_text_heading h2 {
+        font-size: 2.25rem;
+    }
+
+    .it_text_para p {
+        font-size: 16px;
+    }
+
+    .it_img img {
+        height: unset;
+    }
+
+    .it_main_text {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .devolped_img {
+        background-position: 50% 50%;
+        height: 670px;
+    }
+
+    #service {
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+
+    .consulting_service {
+        gap: 58px;
+    }
+
+    .consulting_men {
+        width: 260px;
+        height: 241px;
+        margin: 65px 0 0;
+    }
+    .guide_line_team {
+        width: 180px;
+        height: 180px;
+        margin: -298px 0 0 315px;
+    }
+
+    .service_text {
+        padding-top: 40px;
+    }
+
+    .service_heading h1 {
+        font-size: 2.25rem;
+    
+    }
+
+    .service_para {
+        font-size: 17px;
+        /* width: 100%; */
+        width: 355px;
+        /* text-align: center; */
+    }
+
+    .freelance_designer {
+        flex-direction: column;
+    }
+
+    .freelancer-design {
+        margin: 0 auto;
+    }
+
+    #purchase {
+        height: unset;
+        padding-bottom: 50px;
+    }
+
+    .freelance_team_section {
+        width: 350px;
+    }
+
+    .freelance_team {
+        width: 350px;
+    }
+
+    .freelance_team_para p {
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 15px;
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .image_card {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .image_div {
+        width: 321px;
+        height: 100%;
+        padding-bottom: 10px;
+        padding-left: 9px;
+        padding-right: 5px;
+    }
+
+    .main_image_div p {
+        font-family: 'Poppins';
+    }
+
+    .main_quality_para {
+        font-size: 24px;
+        width: unset;
+    }
+
+    .quality_main_div {
+        padding-top: 214px;
+    }
+
+    .company {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap: 55px;
+    }
+
+    .company_img {
+        width: 340px;
+        height: 340px;
+    }
+
+    .company_heading {
+        font-size: 35px;
+    }
+
+    .main_about_para {
+        width: 326px;
+    }
+
+    .it_main_text {
+        text-align: unset;
+        padding-bottom: unset;
+    }
+
+    .it_text_heading {
+        font-size: 2.1rem;
+    }
+
+    .main_it_img {
+        padding-top: 50px;
+    }
+
+    .it_img img {
+        height: unset;
+        width: 100%;
+    }
+
+    .straight_heading {
+        font-size: 53px;
+    }
+
+    .main_devolpment {
+        gap: 30px;
+    }
+
+    .devolping_text {
+        width: 325px;
+    }
+
+    .service_heading {
+        font-size: 1.5rem;
+        text-align: unset;
+        padding-bottom: 10px;
+    }
+
+    .service_para {
+        text-align: unset;
+    }
+
+    .service_link a {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .freelancer-design {
+        gap: 30px;
+    }
+
+    .freelance_designer {
+        display: block;
+    }
+
+    .freelance_team_para {
+        text-align: unset;
+        font-size: 1rem;
+        padding-top: 40px;
+    }
+
+    .colleage-heading {
+        font-size: 1.3rem;
+    }
+
+    .form_input {
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 340px;
+    }
+
+    #img_section {
+        background-position: 61% 50%;
+        height: 892px;
+    }
+
+    .creative {
+        flex-direction: column;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        margin: unset;
+        padding-bottom: 70px;
+    }
+
+    .creative_para {
+        text-align: left;
+        line-height: 1.8;
+    }
+
+    #section_image {
+        padding-bottom: 55px;
+        padding-top: 60px;
+    }
+
+    .image_div {
+        width: 316px;
+    }
+
+    .main_image_div p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 17px;
+    }
+
+    .image_div {
+        padding-left: 2px;
+        padding-right: 3px;
+    }
+
+    .quality_svg {
+        width: unset;
+        margin: unset;
+    }
+
+    .quality_main_div {
+        padding-top: 90px;
+    }
+
+    .quality_heading p {
+        font-size: 33px;
+    }
+
+    .main_quality_para {
+        font-size: 19px;
+        margin-top: 15px;
+    }
+
+    .quality_link {
+        margin-top: 30px;
+    }
+
+    element.style {
+        flex-direction: column;
+    }
+
+    .about_company_text {
+        width: 100%;
+        margin-top: unset;
+    }
+
+    .company {
+        flex-direction: column;
+    }
+
+    .main_text_about_company {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .company_heading {
+        font-size: 30px;
+    }
+
+    .it_text_heading {
+        font-size: 1.875rem;
+    }
+
+    .main_devolpment {
+        flex-direction: column;
+    }
+
+    .devolped_img {
+        width: 80%;
+        background-position: 100% 50%;
+        height: 275px;
+    }
+
+    .devolping_text {
+        width: unset;
+        padding-bottom: 70px;
+    }
+
+    .straight_heading {
+        font-size: 40px;
+    }
+
+    img.head_person {
+        width: 250px;
+        margin: unset;
+        height: 250px;
+    }
+
+    img.consulting_men {
+        width: 250px;
+        height: 250px;
+        margin: 56px;
+    }
+
+    .guide_line_team {
+        width: 205px;
+        height: 205px;
+        margin: 68px 81px 0 0;
+    }
+
+    .service_text {
+        padding-top: unset;
+    }
+
+    .service_heading {
+
+        /*text-align: center;*/
+        padding-bottom: unset;
+    }
+    .consulting_service {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .freelancer-design {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .freelance_team_section {
+        width: 340px;
+    }
+
+    .freelancer_link a {
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .freelance_team {
+        width: 340px;
+        padding: 30px 21px;
+    }
+
+    .freelance_team_para {
+        text-align: center;
+    }
+
+    .form_input {
+        flex-direction: column;
+    }
+
+    .colleage_Btn {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .colleage_Btn a {
+        margin-left: unset;
+        padding: 15px 111px;
+    }
+
+    .form_input {
+        gap: 10px;
+    }
+
+    .location-main {
+        flex-direction: column;
+    }
+
+    #colleages {
+        height: unset;
+    }
+
+    .location_landline {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .businessman {
+        padding-bottom: 1px;
+    }
+
+    .footer_main_text {
+        width: 341px;
+    }
+
+    .svg_num h6 {
+        margin: -33px 0 0 48px;
+    }
+
+    .location_para {
+        margin: 18px 0 0 46px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 340px;
+    }
+    .service_para {
+        text-align: unset;
+    }
+    
+}
